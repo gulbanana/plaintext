@@ -22,6 +22,7 @@ function attach(instance) {
 
     var plainEditor = document.createElement("textarea");
     plainEditor.style.height = "200px";
+    plainEditor.style.fontFamily = "Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace";
 
     var reentrant = false;
     plainEditor.onkeyup = function() {
