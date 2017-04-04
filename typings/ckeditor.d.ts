@@ -5,6 +5,9 @@
 // WORK-IN-PROGRESS: Any contribution support welcomed.
 // See https://github.com/borisyankov/DefinitelyTyped/issues/1827 for more informations.
 declare module CKEDITOR {
+    interface instances {
+        [name: string]: editor;
+    }
 
     // Config options
     var disableAutoInline: boolean;
@@ -56,7 +59,7 @@ declare module CKEDITOR {
     var basePath: string;
     var currentInstance: editor;
     var document: dom.document;
-    var instances: editor[];
+    var instances: instances;
     var loadFullCoreTimeout: number;
     var revision: string;
     var rnd: number;
